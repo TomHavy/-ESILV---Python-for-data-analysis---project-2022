@@ -1,4 +1,4 @@
-# Seoul Bike Sharing Demand Prediction
+# Seoul Bike Sharing Demand Predictor
 
 #### [Project for the Python-For-Data-Analysis Course (ESILV 2022)]
 
