@@ -1,26 +1,28 @@
-# Seoul Bike Sharing Demand Prediction [Project for the Python-For-Data-Analysis Course (ESILV Project 2022)]
+# Seoul Bike Sharing Demand Prediction
+
+#### [Project for the Python-For-Data-Analysis Course (ESILV 2022)]
 
 This project aims to predict the number of rented bikes in Seoul, South Korea using the Seoul Bike Sharing Demand dataset. With 13 variables, including temperature, humidity, and season, this dataset can help rental companies ensure a stable supply of bikes for the public.
 
 ## 📊 Data Analysis
 
-After adding some variables, including pollution and public holidays, we carried out some visualizations to see the correlations between each variable and the target variable (Rented Bike Count). We also plot each distribution for a better overview.
+We started by exploring the dataset and adding some variables, including pollution and public holidays, to see if they have any correlation with the target variable (Rented Bike Count). We carried out some visualizations, including scatter plots and heatmaps, to see the relationships between each variable and the target variable. We also plotted each distribution to see the range and distribution of each variable.
 
 ## 🛠️ Data Preprocessing
 
-We preprocess the data by removing outliers, handling missing values, and normalizing the data. We also split the data into training and testing sets.
+We preprocessed the data by removing outliers, handling missing values, and normalizing the data. We removed the rows with missing values and used the mean value to fill in the missing values in the temperature and humidity columns. We also normalized the data using the MinMaxScaler to scale the values between 0 and 1. We split the data into training and testing sets using a 70:30 ratio.
 
 ## 🤖 Model Selection
 
-We compare the performance of different regression models, including Linear Regression, Decision Tree Regression, Random Forest Regression, and Gradient Boosting Regression. We use cross-validation to evaluate the models and select the best one.
+We compared the performance of different regression models, including Linear Regression, Decision Tree Regression, Random Forest Regression, and Gradient Boosting Regression. We used cross-validation to evaluate the models and select the best one. We used the GridSearchCV function to tune the hyperparameters of each model and find the best combination of hyperparameters.
 
 ## 📈 Model Evaluation
 
-We evaluate the performance of the selected model using various metrics, including Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R2) score. We also visualize the predicted values and the actual values to see how well the model fits the data.
+We evaluated the performance of the selected model using various metrics, including Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R2) score. We also visualized the predicted values and the actual values to see how well the model fits the data. We used the SHAP (SHapley Additive exPlanations) library to explain the predictions and see the contribution of each feature to the prediction.
 
 ## 📝 Conclusion
 
-Based on our analysis and evaluation, we conclude that the Gradient Boosting Regression model performs the best in predicting the number of rented bikes in Seoul. Rental companies can use this information to improve their services and meet customer demand more effectively.
+Based on our analysis and evaluation, we concluded that the Gradient Boosting Regression model performs the best in predicting the number of rented bikes in Seoul. The model achieved an R2 score of 0.87 on the test set, which indicates a good fit to the data. Rental companies can use this information to improve their services and meet customer demand more effectively.
 
 ## 📋 Requirements
 
