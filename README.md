@@ -1,4 +1,6 @@
-# Seoul Bike Sharing Demand Predictor
+<div align="center">
+  <h1>Seoul Bike Sharing Demand Predictor</h1>
+</div>
 
 #### [Project for the Python-For-Data-Analysis Course (ESILV 2022)]
 
